@@ -1,5 +1,5 @@
 sum: sum.o 
-	g++ -g -o sum sum.o
+	g++ -g -o sum sum.cpp
 
-sum.o: sum.cpp
-	g++ -g -c sum.cpp
+debug: sum.o
+	g++ -DDEBUG -o sum sum.cpp
