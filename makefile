@@ -3,3 +3,6 @@ sum: sum.o
 
 debug: sum.o
 	g++ -DDEBUG -o sum sum.cpp
+
+clean: 
+	rm sum.o sum
